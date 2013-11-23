@@ -1,7 +1,7 @@
 "GameInfo"
 {
 	game	"BarrelMod"
-	title	"BARREL+MOD'"
+	title	"HALF+LIFE'"
 	title2	"deathmatch"
 	type 	multiplayer_only
 	nomodels 0

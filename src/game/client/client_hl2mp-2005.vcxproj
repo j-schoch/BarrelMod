@@ -43,7 +43,7 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
     <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PostBuildEventUseInBuild>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release_hl2mp\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release_hl2mp\</IntDir>
     <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreBuildEventUseInBuild>
     <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PreLinkEventUseInBuild>
@@ -136,13 +136,12 @@ copy "$(TargetDir)"client.dll "C:\Program Files (x86)\Steam\steamapps\SourceMods
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Message>Copying to C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\</Message>
-      <Command>if exist "C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.dll" attrib -r "C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.dll"
-copy "$(TargetDir)"client.dll "C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin"
-if exist "C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.pdb" attrib -r "C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.pdb"
-if exist "$(TargetDir)"client.pdb copy "$(TargetDir)"client.pdb "C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.pdb"
-</Command>
-      <Outputs>C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.dll;C:\Program Files (x86)\Steam\steamapps\SourceMods\barrelmod\bin\client.pdb;%(Outputs)</Outputs>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
     <ClCompile>
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>

@@ -237,6 +237,7 @@ void CHL2MP_Player::GiveAllItems( void )
 
 void CHL2MP_Player::GiveDefaultItems( void )
 {
+	//js. change starting weapons
 	EquipSuit();
 
 	CBasePlayer::GiveAmmo( 255,	"Pistol");
@@ -253,6 +254,7 @@ void CHL2MP_Player::GiveDefaultItems( void )
 	{
 		GiveNamedItem( "weapon_crowbar" );
 	}
+	
 	
 	GiveNamedItem( "weapon_pistol" );
 	GiveNamedItem( "weapon_smg1" );
@@ -297,6 +299,7 @@ void CHL2MP_Player::PickDefaultSpawnTeam( void )
 		}
 		else
 		{
+			//js. setting up teams
 			CTeam *pCombine = g_Teams[TEAM_COMBINE];
 			CTeam *pRebels = g_Teams[TEAM_REBELS];
 
@@ -336,7 +339,7 @@ void CHL2MP_Player::Spawn(void)
 {
 	m_flNextModelChangeTime = 0.0f;
 	m_flNextTeamChangeTime = 0.0f;
-
+	//js. sounds important
 	PickDefaultSpawnTeam();
 
 	BaseClass::Spawn();
@@ -360,7 +363,7 @@ void CHL2MP_Player::Spawn(void)
 	AddFlag(FL_ONGROUND); // set the player on the ground at the start of the round.
 
 	m_impactEnergyScale = HL2MPPLAYER_PHYSDAMAGE_SCALE;
-
+	//js. freezing player?
 	if ( HL2MPRules()->IsIntermission() )
 	{
 		AddFlag( FL_FROZEN );
