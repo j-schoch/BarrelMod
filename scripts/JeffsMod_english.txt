@@ -1,0 +1,75 @@
+"lang" 
+{ 
+"Language" "English" 
+"Tokens" 
+{ 
+
+"hl2_AmmoFull"			"FULL"
+
+"HL2_357Handgun"	".357 MAGNUM"
+"HL2_Pulse_Rifle"	"OVERWATCH STANDARD ISSUE\n(PULSE-RIFLE)"
+"HL2_Bugbait"		"PHEROPOD\n(BUGBAIT)"
+"HL2_Crossbow"		"CROSSBOW"
+"HL2_Crowbar"		"CROWBAR"
+"HL2_Grenade"		"GRENADE"
+"HL2_GravityGun"	"ZERO-POINT ENERGY GUN\n(GRAVITY GUN)"
+"HL2_Pistol"		"9MM PISTOL"
+"HL2_RPG"		"RPG\n(ROCKET PROPELLED GRENADE)"
+"HL2_Shotgun"		"SHOTGUN"
+"HL2_SMG1"		"SMG\n(SUBMACHINE GUN)"
+"HL2_SLAM"		"S.L.A.M\n(Selectable Lightweight Attack Munition)"
+"HL2_StunBaton"		"STUNSTICK"
+
+"HL2_357Handgun_Menu"	".357 MAGNUM"
+"HL2_Pulse_Rifle_Menu"	"PULSE RIFLE"
+"HL2_Crossbow_Menu"	"CROSSBOW"
+"HL2_Crowbar_Menu"	"CROWBAR"
+"HL2_Grenade_Menu"	"GRENADE"
+"HL2_GravityGun_Menu"	"GRAVITY GUN"
+"HL2_Pistol_Menu"	"9MM PISTOL"
+"HL2_RPG_Menu"		"RPG"
+"HL2_Shotgun_Menu"	"SHOTGUN"
+"HL2_SMG1_Menu"		"SMG"
+"HL2_SLAM_Menu"		"S.L.A.M"
+"HL2_StunBaton_Menu"	"STUNSTICK"
+
+"HL2MP_Scoreboard_DM"		"Deathmatch"
+"HL2MP_Scoreboard_Rebels"	"Rebels"
+"HL2MP_SCoreboard_Combine"	"Combine"
+"HL2MP_Scoreboard_Score"	"Kills"
+"HL2MP_Scoreboard_Deaths"	"Deaths"
+"ScoreBoard_Player"		"%s1    -   %s2 player"
+"ScoreBoard_Players"		"%s1    -   %s2 players"
+"ScoreBoard_Deathmatch"		"Deathmatch"
+"ScoreBoard_TeamDeathmatch"	"Team Deathmatch"
+"ScoreBoard_Spectator"		"%s1 spectator: %s2"
+"ScoreBoard_Spectator"		"%s1 spectators: %s2"
+"Scoreboard_Server"		"%s1"
+"Scoreboard_Ping"		"Ping"
+
+"Playerid_sameteam"		"Friend: %s1 Health: %s2"
+"Playerid_diffteam"		"Enemy: %s1"
+"Playerid_noteam"		"%s1 Health:%s2"
+"Team"				"Team %s1"
+
+"Game_connected"			"%s1 connected"
+"Game_disconnected"			"%s1 has left the game"
+"Cannot_Be_Spectator"			"This server does not allow spectating"
+
+// Radio and chat strings can have control characters embedded to set colors.  For the control characters to be used, one must be at the start of the string.
+// The control characters can be copied and pasted in notepad.
+//  = 0x02 (STX) - Use team color up to the end of the player name.  This only works at the start of the string, and precludes using the other control characters.
+//  = 0x03 (ETX) - Use team color from this point forward
+//  = 0x04 (EOT) - Use location color from this point forward
+//  = 0x01 (SOH) - Use normal color from this point forward
+"HL2MP_Chat_Team_Loc"		"(TEAM) %s1 @ %s3 :  %s2"
+"HL2MP_Chat_Team"			"(TEAM) %s1 :  %s2"
+"HL2MP_Chat_Team_Dead"		"*DEAD*(TEAM) %s1 :  %s2"
+"HL2MP_Chat_Spec"			"(Spectator) %s1 :  %s2"
+"HL2MP_Chat_All"			"%s1 :  %s2"
+"HL2MP_Chat_AllDead"		"*DEAD* %s1 :  %s2"
+"HL2MP_Chat_AllSpec"		"*SPEC* %s1 :  %s2"
+"HL2MP_Name_Change"		"* %s1 changed name to %s2"
+
+} 
+}

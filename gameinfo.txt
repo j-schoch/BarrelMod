@@ -1,7 +1,7 @@
 "GameInfo"
 {
 	game	"BarrelMod"
-	title	"HALF+LIFE'"
+	title	"BARREL+MOD'"
 	title2	"deathmatch"
 	type 	multiplayer_only
 	nomodels 0
@@ -16,8 +16,9 @@
 
 	FileSystem
 	{
-		SteamAppId				218		// GCF for Source SDK Base 2007
+		SteamAppId				218  		// GCF for Source SDK Base 2007
 		ToolsAppId				211		// Tools will load this (ie: source SDK caches) to get things like materials\debug, materials\editor, etc.
+		
 
 		//Orange box sdk allows an extra appid to be defined here to mount additional content. 320 is HL2MP
 		AdditionalContentId			320
@@ -25,9 +26,13 @@
 
 		SearchPaths
 		{
-			Game				|gameinfo_path|.
-			Game				|all_source_engine_paths|hl2mp
-			Game				|all_source_engine_paths|hl2
+			//Game				|gameinfo_path|.
+			//Game				|all_source_engine_paths|hl2mp
+			//game				|all_source_engine_paths|hl2
+			Game			|gameinfo_path|.
+			Game			sourcetest
+			Game 			hl2mp
+			Game			hl2
 		}
 	}
 }
