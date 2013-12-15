@@ -309,11 +309,17 @@ void CHL2MP_Player::PickDefaultSpawnTeam( void )
 			}
 			else
 			{
-				if ( pCombine->GetNumPlayers() > pRebels->GetNumPlayers() )
+				/*if ( pCombine->GetNumPlayers() > pRebels->GetNumPlayers() )
+				{
+					ChangeTeam( TEAM_REBELS );
+				}*/
+
+				// js. if there is a seeker, auto assign to rebels
+				if (pCombine->GetNumPlayers() > 0)
 				{
 					ChangeTeam( TEAM_REBELS );
 				}
-				else if ( pCombine->GetNumPlayers() < pRebels->GetNumPlayers() )
+				else if ( pCombine->GetNumPlayers() <= 0 )
 				{
 					ChangeTeam( TEAM_COMBINE );
 				}
