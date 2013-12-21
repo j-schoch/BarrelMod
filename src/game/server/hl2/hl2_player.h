@@ -173,6 +173,9 @@ public:
 	int GetNumSquadCommandables();
 	int GetNumSquadCommandableMedics();
 
+	//js. declaring new animation method
+	void SetAnimation ( PLAYER_ANIM playerAnim );
+
 	// Locator
 	void UpdateLocatorPosition( const Vector &vecPosition );
 
